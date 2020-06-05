@@ -1,0 +1,310 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hr {
+    border: 1px solid rgb(158, 158, 158);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+}
+
+.row {
+    display: flex;
+    flex-grow: inherit;
+}
+
+.foco {
+    font-weight: bold;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.paragrafo {
+    margin-bottom: 10px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.20rem;
+}
+
+.container-primario {
+    background-color: rgb(42, 57, 90);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.container-secundario {
+    background-color: rgb(68, 83, 116);
+    width: 50%;
+    height: 657px;
+    padding: 10px;
+}
+
+.div-logo {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.logo {
+    font-size: 1.50rem;
+    text-decoration: none;
+    color: white;
+}
+
+.div-text {
+    height: 547px;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.div-links {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.links {
+    text-decoration: none;
+    color: #8ba8cb;
+}
+
+.div-email {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.div-btn {
+    margin-top: 5px;
+}
+
+.btn {
+   padding: 10px 7px;
+   border-radius: 2px;
+   color: white;
+   font-weight: bold;
+   background-color: #488cdc;
+   margin-top: 20px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
+   transition: 0.3s ease-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #488cdc;
+    transition: 0.3s ease;
+}
+
+.btn:active {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
+    background-color: #363636;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.email {
+    border: 0;
+    background-color: #488ddc88;
+    border-radius: 0px 3px 3px 0px;
+    padding: 0px 5px;
+    width: 85%;
+    height: 40px;
+    font-size: 1rem;
+    color: rgb(212, 212, 212);
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.email:focus, select:focus{
+    box-shadow: 0;
+    outline: 0;
+}
+
+.email::-webkit-input-placeholder {
+    color: rgb(211, 211, 211);
+    font-size: 0.80rem;
+}
+
+.sign {
+    font-weight: normal;
+    margin-bottom: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.50rem;
+}
+
+.redesocial {
+    margin-right: 10px;
+}
+
+.links:hover {
+    color: white;
+}
+
+.form-icon {
+    border-radius: 3px 0px 0px 3px;
+    padding: 11px 10px;
+    padding-bottom: 12px;
+    font-size: 0.80rem;
+    background-color:  #488ddc88;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: white;
+}
+
+.form-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    background-color: #488ddc88;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+    margin-left: 7px;
+}
+
+.form-radio:checked {
+    background-color: #f1f1f1;
+    transition: 0.3s ease;
+}
+
+.form-radio:checked::before {
+    position: absolute;
+    font: 9px/1 'Open Sans', sans-serif;
+    left: 6px;
+    top: 5px;
+    content: '\02143';
+    transform: rotate(40deg);
+    color: #488ddc88;
+    font-weight: bold;
+}
+
+.form-label {
+    cursor: pointer;
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.80rem;
+}
+
+.div-radio-conta {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 80%;
+}
+
+.div-radio-sexo {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 85%;
+}
+
+@media (max-width:899px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .container-secundario {
+        width: 100%;
+        height: 100%;
+    }
+
+    .div-logo {
+        height: 50px;
+        background-color: #488cdc;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        align-items: center;
+        display: flex;
+    }
+
+    .div-text {
+        height: 100%;
+    }
+
+    .div-links {
+        height: 100%;
+    }
+
+    .div-email {
+        height: 100%;
+        margin-top: 10px;
+        padding-top: 40px;
+    }
+
+    .email {
+        width: 85%;
+    }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
+    .container-primario {
+        padding: 16px 10px;
+    }
+
+    body {
+        background-color: rgb(42, 57, 90);
+    }
+
+}
